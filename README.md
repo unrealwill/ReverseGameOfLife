@@ -6,6 +6,7 @@ Try to predict the previous state of a game of life state using a diffusion mode
 Saw AlphaPhoenix video https://www.youtube.com/watch?v=g8pjrVbdafY for more explanation about the problem.
 
 Here we are not trying to find all antecedents, but any one.
+
 We train a diffusion model on a discrete state space : 
 - We take a state, compute the next state
 - We corrupt the state with random bit flip depending on the noise level
