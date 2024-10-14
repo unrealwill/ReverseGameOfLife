@@ -19,6 +19,15 @@ Once the model is trained, to sample we follow the diffusion methodology :
           - predict the denoised state from target state and current noisy state with the model
           - we add noise by randomly flipping some bits
 
+The various noise schedule have not been explored yet.
+Performance statistics have not been mapped yet.
+
+This method is quite generic for reverse problems so can probably be use to discover some heuristics for SAT problems, or optimization problems, or calibration of ill-defined models. Viewed from afar it's kind of training a global optimizer for your class of problem.
+
+One alternative view is viewing the diffusion model as a degenerate case of RL game, where the reward is greedy (every step gets a reward corresponding to the distance to the solution). The temporal credit assignement is skipped to make the problem easier. To obtain more performance solving the inverse problem as a game with RL should be even better.
+
+
+
 Requirement :
 torch 
 
