@@ -24,7 +24,7 @@ torch
 To run :
 ```python3 gameoflife.py```
 
-On the first run it will train a diffusion model, and save it for subsequent run. (The model is 126M so not sharing it on github).
+On the first run it will train a diffusion model, and save it for subsequent run. (The model is 126M so not sharing it on github and not trained for very long (less than 1hr on a RTX4090) (you can reduce or increase nbiter (number of training iterations) for faster training at the price of less performance ).
 
 It will generate a random state, compute the next state, and then reverse this next state so we know there is at least a solution (not a garden of eden).
 Have not computed success statistics for but probably > 80% for 10x10 worlds with less than 100 iterations.
