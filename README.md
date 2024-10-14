@@ -39,7 +39,7 @@ On the first run it will train a diffusion model, and save it for subsequent run
 It will generate a random state, compute the next state, and then reverse this next state so we know there is at least a solution (not a garden of eden).
 Have not computed success statistics for but probably > 80% for 10x10 worlds with less than 100 iterations.
 
-example output prediction :
+example output prediction (observe that nextprevstate == nextstate and prevstate !=state (which mean we have found a different antecedent) ):
 ```
 iter 61
 err
