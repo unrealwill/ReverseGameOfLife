@@ -139,7 +139,7 @@ def predict(n=10,bs=1,device="cuda"):
 
 if __name__ == "__main__":
     n = 10
-    device = "cuda"
+    device = "cuda" if th.cuda.is_available() else "cpu"
     nbiter= 100000  
     #if we want to evolve game of life
     bs = 1
