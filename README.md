@@ -12,10 +12,11 @@ We train a diffusion model on a discrete state space :
 - And we train a convolutional residual neural network to predict model( nextstate, noisystate) -> state
 
 Once the model is trained, to sample we follow the diffusion methodology :
--we start from random noise and target state
--In a loop with decreasing noise levels :
--predict the denoised state from target state and current noisy state with the model
--we add noise by randomly flipping some bits
+
+- we start from random noise and target state
+- In a loop with decreasing noise levels :
+          - predict the denoised state from target state and current noisy state with the model
+          - we add noise by randomly flipping some bits
 
 Requirement :
 torch 
